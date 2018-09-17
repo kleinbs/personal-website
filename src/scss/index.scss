@@ -1,0 +1,7 @@
+@media screen and (max-width: 1200px) {
+  @import "small";
+}
+
+@media screen and (min-width: 1200px) {
+  @import "large";
+}
