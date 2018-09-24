@@ -1,19 +1,25 @@
-@import "../../node_modules/@fortawesome/fontawesome-free/less/brands.less";
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 
 @media screen and (max-width: 1200px) {
-  @import "small";
+  @import 'small';
 }
 
 @media screen and (min-width: 1200px) {
-  @import "large";
+  @import 'large';
 }
 
 .linkedIn {
 
-  .fa-icon;
-  .fab;
+  @extend %fa-icon;
+  @extend .fab;
+  color: blue;
+
   &:before {
-    content: @fa-linkedin-in;
+    content: fa-content($fa-var-linkedin-in);
   }
 }
 

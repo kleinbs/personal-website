@@ -27,8 +27,23 @@ module.exports = {
                     "sass-loader",
                     "postcss-loader"
                 ]
+            }, {
+                test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+                exclude: /images/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: '.'
+                    }
+                }]
             }
-        ]
+        ],
+    },
+    resolve: {
+        alias: {
+            node_module: path.resolve(__dirname, 'src')
+        }
     },
     plugins: [
         new HtmlWebPackPlugin({
@@ -41,10 +56,10 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             {
-                from: 'src/assets/*',
+                from: 'src/assets/**',
                 to: './',
                 flatten: true
-            }
+            },
         ])
     ]
 };
