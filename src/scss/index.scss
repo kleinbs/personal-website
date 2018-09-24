@@ -1,7 +1,22 @@
+@import "../../node_modules/@fortawesome/fontawesome-free/less/brands.less";
+
 @media screen and (max-width: 1200px) {
   @import "small";
 }
 
 @media screen and (min-width: 1200px) {
   @import "large";
+}
+
+.linkedIn {
+
+  .fa-icon;
+  .fab;
+  &:before {
+    content: @fa-linkedin-in;
+  }
+}
+
+body {
+  margin: 0;
 }

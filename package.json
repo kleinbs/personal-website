@@ -15,7 +15,9 @@
     "last 2 versions"
   ],
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
     "autoprefixer": "^9.1.5",
+    "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
     "html-loader": "^0.5.5",
