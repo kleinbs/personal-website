@@ -13,16 +13,51 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 }
 
 .linkedIn {
-
   @extend %fa-icon;
   @extend .fab;
-  color: blue;
+  //color: #0077B5;
+  color: lightgray;
 
   &:before {
     content: fa-content($fa-var-linkedin-in);
   }
 }
 
+.github {
+  @extend  %fa-icon;
+  @extend .fab;
+  color: lightgray;
+
+  &:before {
+    content: fa-content($fa-var-github);
+  }
+}
+
+#header {
+  margin: 0 auto;
+  text-align: center;
+
+  h1 {
+    color: white;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  h2 {
+    color: white;
+    font-size: medium;
+    font-style: italic;
+    em {
+      font-size: x-large;
+    }
+  }
+}
+
+.fa-2x {
+  vertical-align: middle;
+}
+
 body {
   margin: 0;
+  background-image: url('/dust_scratches.png');
+  background-repeat: repeat;
 }

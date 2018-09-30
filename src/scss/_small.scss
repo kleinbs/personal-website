@@ -9,6 +9,9 @@
   }
 
   #bottom {
+    a {
+      color: inherit;
+    }
     img {
       border-radius: 50%;
       height: 150px;
@@ -18,9 +21,33 @@
       display: block;
     }
 
-    width: 100%;
+    .links {
+      transform: translate(0, -70px);
+      margin: 0 auto;
+      width: 75px;
+      height: 10vh;
+      a:first-child {
+        float: left;
+      }
+      a:last-child {
+        float: right;
+      }
+    }
+
+    #intro {
+      transform: translate(0, -110px);
+      margin: 0 auto;
+      width: 75%;
+      text-align: center;
+      font-family: arial, serif;
+    }
+
+    width: 75%;
     min-height: 15vh;
-    background-color: lightgray;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 10px;
+    filter: drop-shadow(0 10px 0.75rem gray);
   }
 }
 
