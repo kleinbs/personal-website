@@ -4,15 +4,16 @@
 
   #top {
     width: 100%;
-    min-height: 15vh;
+    min-height: 16vh;
+    padding-top: 10px;
     background-color: steelblue;
   }
 
   #bottom {
     img {
       border-radius: 50%;
-      height: 150px;
-      width: 150px;
+      height: 200px;
+      width: 200px;
       margin: 0 auto;
       transform: translate(0, -6vh);
       display: block;
