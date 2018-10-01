@@ -9,9 +9,6 @@
   }
 
   #bottom {
-    a {
-      color: inherit;
-    }
     img {
       border-radius: 50%;
       height: 150px;
@@ -35,19 +32,36 @@
     }
 
     #intro {
-      transform: translate(0, -110px);
+      transform: translate(0, -90px);
       margin: 0 auto;
       width: 75%;
       text-align: center;
-      font-family: arial, serif;
     }
 
-    width: 75%;
+    width: 100%;
     min-height: 15vh;
     background-color: white;
     margin: 0 auto;
     margin-top: 10px;
     filter: drop-shadow(0 10px 0.75rem gray);
+  }
+}
+
+#experience {
+  .timeline:before {
+      left: 8px;
+      width: 2px;
+  }
+  .timeline-block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .timeline-block-right {
+    float: none;
+  }
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
   }
 }
 
