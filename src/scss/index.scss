@@ -58,7 +58,6 @@ $basic-text: #666;
   &:before {
     content: fa-content($fa-var-envelope);
   }
-
 }
 
 #header {
@@ -68,7 +67,8 @@ $basic-text: #666;
   h1 {
     color: white;
     margin-top: 0;
-    padding-top: 20px;
+    margin-bottom: 0;
+    font-size: 40pt;
   }
   h2 {
     color: white;
