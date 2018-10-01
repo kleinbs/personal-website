@@ -5,6 +5,7 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/brands';
 
 $accent-color: steelblue;
+$basic-text: #666;
 
 #header {
   width: 100%;
@@ -192,6 +193,7 @@ body {
   background-image: url('/dust_scratches.png');
   background-repeat: repeat;
   font-family: Roboto, serif;
+  color: $basic-text;
 }
 
 .dual-links {
@@ -217,7 +219,7 @@ body {
   height: 40px;
 
   &:hover {
-    background-color: darkcyan !important;
+    background-color: #436392 !important;
   }
 }
 
